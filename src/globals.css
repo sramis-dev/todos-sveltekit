@@ -1,0 +1,63 @@
+@import '@fontsource-variable/josefin-sans';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    :root {
+        /* Font family */
+        --font-sans: 'Josefin Sans Variable', sans-serif;
+    
+        /* Font Sizes */
+        --fs-heading-xl: 2.5rem;
+        --fs-heading-md: 1.5rem;
+        --fs-heading-sm: 1.125rem;
+        --fs-body-xs: 0.75rem;
+        --fs-body-sm: 0.875rem;
+        --fs-body-md: 1rem;
+        --fs-body-lg: 1.125rem;
+    
+        /* Letter spacings */
+        --tracking-1: 0.18px;
+        --tracking-2: 0.25px;
+    
+        /* Colors */
+        --color-white: 0 0% 100%;
+        --color-almost-white: 0 0% 98%;
+        --color-black: 0 0% 0%;
+        --color-light-blue: 220 98% 61%;
+        --color-dark-grayish-blue-lt: 235 9% 61%;
+        --color-light-grayish-blue-lt: 233 11% 84%;
+        --color-very-dark-grayish-blue-1-lt: 235 19% 35%;
+        --color-very-dark-grayish-blue-2-lt: 235 14% 26%;
+        --color-very-light-grayish-blue-lt: 236 32% 92%;
+        --color-very-dark-blue-dt: 235 21% 11%;
+        --color-very-dark-desaturated-blue-dt: 235 24% 19%;
+        --color-dark-grayish-blue-dt: 234 11% 53%;
+        --color-light-grayish-blue-dt: 234 39% 85%;
+        --color-light-grayish-blue-hover-dt: 236 32% 92%;
+        --color-very-dark-grayish-blue-1-dt: 233 14% 35%;
+        --color-very-dark-grayish-blue-2-dt: 237 14% 26%;
+    
+        /* Shadows */
+        --box-shadow: 0 35px 50px -15px hsl(235 19% 80% / 50%);
+    
+        --background: var(--color-almost-white);
+        --foreground: var(--color-dark-grayish-blue-lt);
+
+        --border: var(--color-very-light-grayish-blue-lt);
+    
+    }
+
+    .dark {
+        --box-shadow: 0 35px 50px -15px hsl(var(--color-black) / 50%);
+    
+        --background: var(--color-very-dark-blue-dt);
+        --foreground: var(--color-dark-grayish-blue-dt);
+
+        --border: var(--color-very-dark-grayish-blue-2-dt);
+    }
+
+}

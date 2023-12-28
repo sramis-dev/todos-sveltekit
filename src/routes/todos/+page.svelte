@@ -8,7 +8,7 @@
 
 <ul class="todo-items">
   {#each data.todos as todo, index (todo.id)}
-    <li>{todo.title}</li>
+    <li class="text-gray-800">{todo.title}</li>
   {/each}
 </ul>
 
